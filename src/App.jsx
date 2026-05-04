@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 const MEMBERS = [
   { id: 0, name: "মনোয়ার", color: "#3B82F6" },
@@ -363,6 +364,7 @@ export default function App() {
           </div>
         </div>
       )}
+      <Analytics />
     </div>
   );
 }
